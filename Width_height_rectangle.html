@@ -1,0 +1,41 @@
+<htmL>
+    <head>
+        <title> Example 01 JS and HTML</title>
+        
+    </head>
+    <body>
+        <main>
+            <h1>Calculator</h1>
+            <h4>Rectangle area:</h4>
+            <fieldset>
+            <script>
+                let width = parseFloat(prompt("Enter the width of rectangle: "));
+                let height = parseFloat(prompt("Enter the height of rectangle: "));        
+                if (width == " "&& width >0){
+                    document.write("Please enter width value ! ");
+                }else if (height == " " && height >0){
+                    document.write("Please enter height value ! ");
+                }else {
+                    function area(width,height){
+                        return width*height;
+                    }
+                    document.write("width = "+width+"<br>"+" height = "+height +"<br>");
+                    document.write("area = "+ area(width,height));
+                }
+                
+
+            </script>
+            </fieldset>
+            <h4>perimeter</h4>
+            <fieldset>
+                <script>
+                    function perimeter(width,height){
+                        return 2*(width+height);
+                    }
+                    //document.write("width="+width+"<br>"+" height="+height +"<br>");
+                    document.write("area = "+ perimeter(width,height));
+                </script>
+                </fieldset>
+        </main>
+    </body>
+</htmL>
